@@ -56,7 +56,7 @@ class Program
 
         float passingGrade = 70;
 
-        if (passingGrade >= 70)
+        if (grade >= passingGrade)
         {
             Console.WriteLine("Congratulations! You passed...");
         }
