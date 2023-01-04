@@ -38,7 +38,7 @@ class Program
 
         string positive = "+";
         string negative = "-";
-        if (grade < 97 && grade > 60)
+        if (grade < 97 && grade >= 60)
         {
             if (lastDigit >= 7)
             {
