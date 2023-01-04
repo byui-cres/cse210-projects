@@ -13,7 +13,8 @@ class Program
         string letter = "";
 
         int lastDigit = (int)(grade % 10);
-        //Console.WriteLine(lastDigit);
+        string positive = "+";
+        string negative = "-";
 
         if (grade >= 90)
         {
@@ -36,8 +37,7 @@ class Program
             letter = "F";
         }
 
-        string positive = "+";
-        string negative = "-";
+
         if (grade < 97 && grade >= 60)
         {
             if (lastDigit >= 7)
