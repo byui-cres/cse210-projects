@@ -7,7 +7,7 @@ class Program
         Console.WriteLine("------------------------------");
         Console.WriteLine("Learning Activity - C# Prep 4");
         Console.WriteLine("------------------------------");
-        Console.WriteLine("Core Requirements & Strech challenge");
+        Console.WriteLine("Core Requirements & Stretch challenge");
         Console.WriteLine("");
         Console.WriteLine("Enter a list of numbers including negative numbers, type '0' when finished...");
         // Declare variables
