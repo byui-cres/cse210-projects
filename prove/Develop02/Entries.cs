@@ -3,7 +3,7 @@ using System.IO;
 class Entries
 {
 
-    public void SaveJournal(string filename, List<string> journalEntries)
+    public void SaveEntries(string filename, List<string> journalEntries)
     {
         try
         {
@@ -13,7 +13,9 @@ class Entries
             {
                 outputFile.WriteLine(entry);
             }
+            
         }
+        Console.WriteLine($"File {filename} was saved successfully");
         }
         catch (FileNotFoundException e)
         {
@@ -23,7 +25,7 @@ class Entries
 
     }
 
-    public void LoadJournal(string filename, List<string> journalEntries)
+    public void LoadEntries(string filename, List<string> journalEntries)
     {
         string filename_ = filename;
         try
@@ -33,6 +35,7 @@ class Entries
             {
                 journalEntries.Add(line);
             }
+        Console.WriteLine($"File {filename} was loaded successfully");
         }
         catch (FileNotFoundException e)
         {
@@ -42,7 +45,7 @@ class Entries
 
     }
 
-    public void DisplayJournal(List<string> journalEntries)
+    public void DisplayEntries(List<string> journalEntries)
     {
         foreach (var entry in journalEntries)
         {

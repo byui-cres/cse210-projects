@@ -38,21 +38,21 @@ class Program
         else if (userChoice ==  "2")
         {
             Entries displayEntries = new Entries();
-            displayEntries.DisplayJournal(userJournalEntries);
+            displayEntries.DisplayEntries(userJournalEntries);
         }
         else if (userChoice ==  "3")
         {
             Entries loadFile = new Entries();
             Console.WriteLine("Filename: ");
             string filename = Console.ReadLine();
-            loadFile.LoadJournal(filename, userJournalEntries);
+            loadFile.LoadEntries(filename, userJournalEntries);
         }
         else if (userChoice ==  "4")
         {
             Entries saveFile = new Entries();
             Console.Write("Filename: ");
             string filename = Console.ReadLine();
-            saveFile.SaveJournal(filename, userJournalEntries);
+            saveFile.SaveEntries(filename, userJournalEntries);
         }
         else if (userChoice ==  "5")
         {
